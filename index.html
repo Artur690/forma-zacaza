@@ -1,0 +1,258 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <title>forma zacaza </title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <body>
+      <?php
+        $host = 'localhost';  // Хост, у нас все локально
+        $user = 'root';    // Имя созданного вами пользователя
+        $pass = ''; // Установленный вами пароль пользователю
+        $db_name = 'sweets_is';   // Имя базы данных
+        $link = mysqli_connect($host, $user, $pass, $db_name); // Соединяемся с базой
+    
+        // Ругаемся, если соединение установить не удалось
+        if (!$link) {
+          echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
+          exit;
+        }
+    
+        //Если переменная Name передана
+        if (isset($_POST["Name"])) {
+          //Если это запрос на обновление, то обновляем
+          if (isset($_GET['red_id'])) {
+              $sql = mysqli_query($link, "UPDATE `products` SET `Name` = '{$_POST['Name']}',`Price` = '{$_POST['Price']}' WHERE `ID`={$_GET['red_id']}");
+          } else {
+              //Иначе вставляем данные, подставляя их в запрос
+              $sql = mysqli_query($link, "INSERT INTO `products` (`Name`, `Price`) VALUES ('{$_POST['Name']}', '{$_POST['Price']}')");
+          }
+    
+          //Если вставка прошла успешно
+          if ($sql) {
+            echo '<p>veicsmigi!datu beis conect: sweets_is padklocina</p>';
+         
+            <title>registration</title>
+          </head>
+          <body>
+           <form action="/example/handler.php">
+            <p><input name="login"> <input type="password" name="pass"></p>
+            <p><input type="submit"></p>
+           </form>
+          </div>
+          <meta charset="utf-8">
+          <input type="datetime" атрибуты>
+          <input type="datetime-local" атрибуты> 
+          <head>
+            <meta charset="utf-8" />
+            <title>Загрузка файла</title>
+           </head>
+           <body>
+            <form enctype="multipart/form-data" method="post">
+             <p>produkta fote ja ir </p>
+             <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+             <input type="submit" value="Отправить"></p>
+            </form>
+           </body>   
+    </table>
+    <p><a href="?add=new">new production</a></p>
+  </body>
+  </html>
+
+    <!-- Custom styles for this template -->
+    <style>
+    	form {
+    		background-color: #f9f9f9;
+    		padding: 20px;
+    		margin: 20px;
+    	}
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="row">
+      	<div class="col-sm-4">
+      		<form action="mail.php" method="POST">
+      			<legend>forma</legend>
+
+      			<div class="form-group">
+      				<label for="">name</label>
+      				<input type="text" class="form-control" id="" name="user_name" placeholder="naim femely">
+      			</div>
+      			<div class="form-group">
+      				<label for="">fone</label>
+      				<input type="text" class="form-control" id="" name="user_phone" placeholder="+371xxxx">
+      			</div>
+      			<div class="form-group">
+      				<label for="">email</label>
+      				<input type="text" class="form-control" id="" name="user_email" placeholder="@mail.ru">
+      			</div>
+				<div class="form-group">
+					<label>comint txt jautajumi</label>
+					<textarea name="message" cols="40" rows="3"></textarea>
+            </div>
+            <table>
+              <a class ="print-doc" href="javascript:(print());"> print</a>
+              <p style="font-size:11; color:#000000;
+              font-family: verdana, serif;" align="left">pilsote nosaukums</p>
+          <td><select name="cade pilsote:"><option value="Газель">Riga
+          </option><option value="pilsote >Riga
+          </option><option value="pilsote">Daugavpils
+          </option><option value="pilsote">Preli
+          </option><option value="pilsote">Rezekne
+          </option></select></td></tr>
+          
+          <tR>
+          <td>
+          <p style="font-size:11; color:#000000;
+              font-family: verdana, serif;" align="left">norecenu veidi</p>
+          <td><select name="Форма оплаты:"><option value="100% предоплата">credita veidi&nbsp;&nbsp;
+          </option><option value="Наличная оплата" >scaidra nauda&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </option><option value="Безналичная оплата">electroniski noricini&nbsp;
+          </option></select></td></tr>
+          
+          <tR>
+          <td>
+          <p style="font-size:11; color:#000000;
+              font-family: verdana, serif;" align="left">ar cureru</p>
+          <td><select name="curer"><option value="Да">ja
+          </option><option value="Нет" >ne
+           
+
+            <p style="font-size:11; color:#000000;
+            font-family: verdana, serif;" align="left">cic kg konfetes </p>
+        <td><select name="cade pilsote:"><option value="Газель">socolde 10kg
+        </option><option value="pilsote >Riga
+        </option><option value="pilsote">parasti 20kg
+        </option><option value="pilsote">socolade 5kg
+        </option><option value="pilsote">parasti 50kg
+        </option></select></td></tr>
+            <tr>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">naim femeli</p>
+            <td>
+            <input type=text name="Ф.И.О." size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <TR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">firmas nosaukums</p>
+            <td>
+            <input type=text name="Организация" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <TR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">E-mail</p>
+            <td>
+            <input type=text name="E-mail" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <TR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">fone</p>
+            <td>
+            <input type=text name="Телефон" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <TR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">pilsote</p>
+            <td>
+            <input type=text name="Рейс (откуда и куда)" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <TR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">valst past indecs </p>
+            <td>
+            <input type=text name="Место загрузки" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <TR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">pulcsteni date</p>
+            <td>
+            <input type=text name="Время загрузки" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <TR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">kada adrese</p>
+            <td>
+            <input type=text name="Место разгрузки" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <tr>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">daudzums konfetes kg </p>
+            <td>
+            <input type=text name="Время разгрузки" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <tR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">konfetes veidi </p>
+            <td>
+            <input type=text name="confetes veidi " size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:300; color:black;'>
+            <tR>
+            <td>
+            <p style="font-size:11; color:#000000;
+                font-family: verdana, serif;" align="left">konfetes (evro.)</p>
+            <td>
+            <input type=text name="confetes nacse evro" size=23 value='' maxlength=30
+                 style='border: 1px black solid; font-size: 11px; width:165; color:black;'>
+            <tR>
+            <td>
+            
+            </table>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=submit value='zacazat'
+                 style='border: 1px black solid; font-size: 11px; width:152; background-Color:#ffffff; color:black;'>
+            </FORM>
+            
+            <INPUT TYPE = "hidden" SIZE = 0 NAME = "Host" value="<!--#echo var="REMOTE_HOST"-->
+            <INPUT TYPE = "hidden" SIZE = 0 NAME = "IP" value="<!--#echo var="REMOTE_ADDR"-->
+				<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="admin@mail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->         
+      		
+      		</form>
+      	</div><!-- .col-sm-4 -->
+      </div> 
+      <div align="center">
+        <!-- .row -->
+      </div>
+      <iframe src="https://calendar.google.com/calendar/embed?src=1tk9heoc9ah25sq9lessu9c224%40group.calendar.google.com&ctz=Europe%2FRiga" style="border: 0" width="600" height="300" frameborder="0" scrolling="no"></iframe>
+      <p>&nbsp;</p>
+  </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+	
